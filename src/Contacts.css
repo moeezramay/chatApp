@@ -1,0 +1,226 @@
+.box-above-contacts {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
+    margin-left: 35px;
+    margin-right: 35px;
+    color: rgb(80, 80, 80);
+  }
+  .Menu-icon-position {
+    color: lightblue;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 2px;
+    cursor: pointer;
+  }
+  .search-icon-position {
+    color: lightblue;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 6px;
+    cursor: pointer;
+  }
+  .contacts-title-contacts {
+    font-size: 25px;
+    font-weight: bold;
+    color: #09d;
+  }
+  
+  .contacts-data-box {
+    position: relative;
+    margin-top: 10px;
+    vertical-align: top;
+    display: inline-block;
+    width: calc(100% - 100px);
+    height: 80px;
+    margin-left: 20px;
+  }
+  .message-line-before-contacts {
+    display: block;
+    width: calc(100% - 60px);
+    height: 1px;
+    margin: 20px auto 0 auto;
+    background-color: rgb(200, 200, 200);
+  }
+  .contact-profile-pic {
+    display: inline-block;
+    width: 65px;
+    height: 65px;
+    border-radius: 40px;
+    background-color: rgb(245, 245, 245);
+    margin-top: 30px;
+    margin-left: 25px;
+  }
+  .contact-profile-name {
+    display: flex;
+    margin-top: -63px;
+    width: 50%;
+    font-size: 20px;
+    margin-left: 104px;
+    font-weight: bold;
+  }
+  .contact-profile-status {
+    margin-top: 5px;
+    margin-left: 104px;
+  }
+  .contact-profile-arrow {
+    font-size: 40px;
+    display: flex;
+    float: right;
+    margin-right: 25px;
+    margin-top: -49px;
+    color: lightblue;
+  }
+  .contact-profile-arrow:hover {
+    cursor: context-menu;
+  }
+  .message-line-after-contacts {
+    display: block;
+    width: 55%;
+    border-radius: 50%;
+    height: 1px;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: 35px;
+    background-color: rgb(200, 200, 200);
+  }
+  .message-button-contacts {
+    display: block;
+    position: absolute;
+    top: 46px;
+    margin-right: 50px;
+    right: 0;
+    margin-left: 20px;
+    padding: 10px 20px 10px 20px;
+    border-radius: 50px;
+    background-color: transparent;
+    border: 1px solid #09d;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.1s, color 0.1s;
+  }
+  
+  .message-button-contacts:hover {
+    background-color: #09d;
+    color: white;
+  }
+  
+  .contacts-box-container {
+    position: relative;
+  }
+  
+  .contact-list {
+    overflow-y: scroll;
+    height: 571px;
+  }
+  #sidebar {
+    background-color: white;
+    position: absolute;
+    width: 70%;
+    left: -70%;
+    height: 100%;
+    top: 0%;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    transition: 0.2s;
+  }
+  
+  .Menu-box-open-items {
+    margin: 11px;
+    margin-left: 25px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    color: black;
+  }
+  .contact-profile-pic-sidebar {
+    display: inline-block;
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+    background-color: rgb(245, 245, 245);
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+  
+  #shade {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s;
+  }
+  .contact-profile-pic-sidebar-name {
+    text-align: center;
+    font-size: 21px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #09d;
+  }
+  .contact-profile-pic-sidebar-id {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 60px;
+    color: gray;
+  }
+  .message-line-before-contacts-dif {
+    display: block;
+    width: calc(100% - 60px);
+    height: 1px;
+    margin: 15px auto 0 auto;
+    background-color: #09d;
+  }
+  .contacts-search-bar-container {
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    right: 100%;
+    height: 94px;
+  }
+  .contacts-search-bar {
+    position: absolute;
+    margin-left: 20%;
+    margin-top: 30px;
+    border-radius: 25px;
+    outline: none;
+    width: calc(50% + 40px);
+    border: 1px solid rgb(80, 80, 80);
+    height: 35px;
+    font-size: 15px;
+    border-style: solid;
+    padding-left: 10px;
+  }
+  .search-bar-back-btn {
+    position: absolute;
+    margin-top: 32px;
+    margin-left: 40px;
+    cursor: pointer;
+  }
+  .contact-sidebar-div {
+    background-color: #09d;
+    position: absolute;
+    margin-top: 620px;
+    width: 100%;
+    height: 50px;
+  }
+  .contact-sidebar-logout {
+    color: white;
+    z-index: 1;
+    position: absolute;
+    margin-left: 25px;
+    margin-top: 625px;
+    font-size: 20px;
+    font-weight: 450;
+    cursor: pointer;
+  }
+  
